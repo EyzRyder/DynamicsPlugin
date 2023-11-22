@@ -10,17 +10,17 @@ namespace DynamicsPlugin
 {
     public class PluginAccountPreOperation : IPlugin
     {
-        public void Execute(IServiceProvider serviceProvidor)
+        public void Execute(IServiceProvider serviceProvider)
         {
             try
             {
-                IPluginExecutionContext context = (IPluginExecutionContext)serviceProvidor.GetService(typeof(IPluginExecutionContext));
+                IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
 
-                IOrganizationServiceFactory serviceFactory = (IOrganizationServiceFactory)serviceProvidor.GetService(typeof(IOrganizationServiceFactory));
+                IOrganizationServiceFactory serviceFactory = (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
 
                 IOrganizationService serviceAdmin = serviceFactory.CreateOrganizationService(null);
 
-                ITracingService trace = (ITracingService)serviceProvidor.GetService(typeof(ITracingService));
+                ITracingService trace = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
 
                 if (context.InputParameters.Contains("Target") && context.InputParameters["Target"] is Entity)
                 {

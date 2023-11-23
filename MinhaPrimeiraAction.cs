@@ -6,7 +6,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace DynamicsPlugin
 {
-    public class FirstAction : IPlugin
+    public class MinhaPrimeiraAction : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider)
         {

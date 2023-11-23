@@ -23,4 +23,21 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly" Version="9.0.2.45" />
   </ItemGroup>
+    <PropertyGroup>
+    <AssemblyOriginatorKeyFile>KeyPlugin.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+    <ItemGroup>
+    <Compile Include="ActionCEP.cs" />
+    <Compile Include="MinhaPrimeiraAction.cs" />
+    <Compile Include="PluginAccountPostOperation.cs" />
+    <Compile Include="PluginAccountPreOperation.cs" />
+    <Compile Include="PluginAccountPreValidation.cs" />
+    <Compile Include="PluginAssincPostOperation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFCriarCalendarioAluno.cs" />
+    <Compile Include="WFValidaLimiteInscricoesAluno.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KeyPlugin.pfx" />
+  </ItemGroup>
 </Project>

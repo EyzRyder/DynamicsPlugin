@@ -34,9 +34,9 @@ namespace DynamicsPlugin
                             string FetchContact = @"<?xml version='1.0'?>" +
                             "<fetch distinct='false' mapping='logical' output-format='xml-platform' version='1.0'>" +
                             "<entity name='contact'>" +
-                            "<attribute name='fullname'>" +
-                            "<attribute name='telephone1'>" +
-                            "<attribute name='contactid'>" +
+                            "<attribute name='fullname'/>" +
+                            "<attribute name='telephone1'/>" +
+                            "<attribute name='contactid'/>" +
                             "<order descending='false' attribute='fullname' />" +
                             "<filter type='and'>" +
                             "<condition attribute='telephone1' value='" + phone1 + "' operator='eq'/>" +
